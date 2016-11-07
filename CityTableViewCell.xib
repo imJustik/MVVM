@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="76" id="KGk-i7-Jjw" customClass="CityTableViewCell" customModule="Weather" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="76"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="75"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EUf-r0-TAO">
+                        <rect key="frame" x="245" y="0.0" width="75" height="76"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="75" id="Igr-Kh-ld0"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Moscow" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FnR-7J-Ur8">
+                        <rect key="frame" x="8" y="44" width="75.5" height="24"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ветер" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ah0-Dh-2Od">
+                        <rect key="frame" x="8" y="8" width="56.5" height="24"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="EUf-r0-TAO" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="33C-Qr-9Gt"/>
+                    <constraint firstAttribute="trailing" secondItem="EUf-r0-TAO" secondAttribute="trailing" id="HAz-rZ-W0Y"/>
+                    <constraint firstItem="Ah0-Dh-2Od" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="JD5-Bh-k3s"/>
+                    <constraint firstItem="Ah0-Dh-2Od" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="PHg-nE-48v"/>
+                    <constraint firstAttribute="bottom" secondItem="EUf-r0-TAO" secondAttribute="bottom" id="bvM-kv-Vue"/>
+                    <constraint firstItem="FnR-7J-Ur8" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="pIp-VT-aEM"/>
+                    <constraint firstItem="FnR-7J-Ur8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="z83-9b-z6s"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.61073084789999998" green="0.65680912599999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <connections>
+                <outlet property="cityLabel" destination="FnR-7J-Ur8" id="orm-35-ROq"/>
+                <outlet property="tempLabel" destination="EUf-r0-TAO" id="Ehm-0J-YRQ"/>
+                <outlet property="timeLabel" destination="Ah0-Dh-2Od" id="4II-aS-exq"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="71"/>
+        </tableViewCell>
+    </objects>
+</document>

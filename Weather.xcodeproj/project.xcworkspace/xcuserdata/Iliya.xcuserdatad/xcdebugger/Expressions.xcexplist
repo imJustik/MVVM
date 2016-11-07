@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "StartViewController.init(coder : NSCoder) -&gt; StartViewController?:StartViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "cellIdentifier">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "StartViewModel.numberOfCities() -&gt; Int:StartViewModel.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "cellsArray.count">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "StartViewController.tableView(UITableView, numberOfRowsInSection : Int) -&gt; Int:StartViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.viewModel.numberOfCities()">
+            </PersistentString>
+            <PersistentString
+               value = "viewModel">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "CityTableViewModal.init(weather : Weather) -&gt; CityTableViewModal:CityTableViewModal.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "weather.precipition">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
